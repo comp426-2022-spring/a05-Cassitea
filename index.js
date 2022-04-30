@@ -1,7 +1,5 @@
 // Place your server entry point code here
 
-
-
 // from server.js
 // Require Express
 var express = require("express")
@@ -17,7 +15,7 @@ const fs = require('fs')
 const morgan = require('morgan')
 
 // Require db script file
-const db = require('./database.js')
+const db = require('./src/services/database.js')
 
 app.use(express.json());
 app.use(express.static('./public'));
